@@ -1,0 +1,51 @@
+header {height: 50px;
+    /*width: 1000px;*/
+  background:gray;
+  margin-top: 0px;
+  
+  margin-left: 10px;
+  margin-right: 10px;}
+  
+  a {text-decoration: none;
+color: inherit;}
+a:hover {color: white;}
+  div {height: 100px;
+  width: 300px;
+  margin: 10px;}
+  p, h1, h2 {
+      margin: 10px;
+      font-family: georgia;}
+
+
+.t1, .t2, .t3, .t4
+{float: left;
+    width: 120px;
+    height: 30px;
+    opacity: 6;
+    color: gray;
+    text-align: center;
+    background: black;
+
+}
+  section {background: gray;
+  float: left;
+ 
+  width: 75%;
+  margin: 10px;}
+  
+  aside {background:gray;
+  float: right;
+  
+  width: 21%;
+  margin: 10px;}
+  
+  footer {
+    clear: both;
+    height: 50px;
+    margin-top:20px;
+    margin-bottom: 0px;
+    
+  margin-left: 10px;
+  margin-right: 10px;
+  background: gray;}
+  /*not sure why the footer is so close to the others!*/
