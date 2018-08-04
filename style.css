@@ -1,0 +1,113 @@
+body {background-image: url("pinkdust.png");}
+
+header {height: 50px;
+
+    /*width: 1000px;*/
+
+  background: rgb(212, 145, 145);
+
+  margin-top: 0px;
+
+  line-height: 50px;
+
+  margin-left: 10px;
+
+  margin-right: 10px;}
+
+  
+
+  a {text-decoration: none;
+
+color: inherit;}
+
+a:hover {color: white;}
+
+  div {height: 100px;
+
+    background: rgb(212, 145, 145);
+
+  width: 300px;
+
+  margin: 10px;}
+
+  p, h1, h2 {
+
+    background: rgb(212, 145, 145);
+
+    color: rgb(100, 98, 98);
+
+      margin: 10px;
+
+      font-family: georgia;}
+
+
+
+
+
+.t1, .t2, .t3, .t4
+
+{float: left;
+
+    width: 120px;
+
+    height: 30px;
+
+    opacity: 6;
+
+    color: rgb(212, 145, 145);
+
+    text-align: center;
+
+    background: rgb(100, 98, 98);
+
+    line-height: 30px;
+
+
+
+}
+
+  section {background: rgb(212, 145, 145);
+
+  float: left;
+
+ 
+
+  width: 75%;
+
+  margin: 10px;}
+
+  
+
+  aside {background: rgb(212, 145, 145);
+
+  float: right;
+
+  position: relative;
+
+  
+
+  width: 21%;
+
+  margin: 10px;}
+
+  
+
+  footer {
+
+    clear: both;
+
+    height: 50px;
+
+    margin-top:20px;
+
+    margin-bottom: 0px;
+
+    background: rgb(212, 145, 145);
+
+  margin-left: 10px;
+
+  margin-right: 10px;
+
+  }
+
+  /*not sure why the footer is so close to the others!*/
