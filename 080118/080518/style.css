@@ -1,0 +1,8 @@
+body {background: rgb(195, 166, 202);}
+header {margin-bottom: 20px;}
+main {width: 960px;
+background: #d5d5d5;
+box-shadow: 2px 3px #a5a5a5;
+margin-top: 20px;
+margin: 0 auto;}
+p, h1 {margin: 20px;}

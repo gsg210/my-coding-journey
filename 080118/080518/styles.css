@@ -1,0 +1,104 @@
+body {background-color: tan;}
+/*change to background img*/
+
+header {
+  margin-top: 0px;
+  background: white;
+ }
+
+/*setting up a container for all the main content to try and hopefully create a sticky footer*/ 
+
+.mainContent {height: 1000px;}
+/*
+.floats{
+  height: 80px;
+  width: 800px;
+  background: pink;
+}
+.left, .middle, .right {
+  float: left;
+  height: 80px;
+}
+.left, .right
+{background: green;
+width: 20%;}
+.middle {
+  background: blue;
+  width: 60%;
+}
+*/
+.row {
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.column1, .column2, .column3 {
+  /*border: 1px solid black;*/
+  height: 40px;
+}
+.column2
+{height: auto;}
+
+.nameplate {
+  float: left;
+  background: teal;
+  height: 80px;
+  width: 240px;
+  text-align: center;
+  line-height: 80px;
+  font-family: georgia;
+  color: white;
+  font-size: 28px;
+}
+.links {
+  float: right;
+  line-height: 80px;
+}
+.wrapper {
+  /*border: 3px solid black;*/
+  height: 60px;
+  background: white;
+  }
+.images {
+  float: left;
+  height: 150px;
+  width: 150px;
+  background: gray;
+  margin: 10px;
+}
+.bar {
+  clear: both;
+  height: 2px;
+background: red;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+p {
+  margin: 10px;
+}
+.contentHeader {
+  line-height: 50px;
+  font-family: georgia;
+font-size: 28px;
+margin: 5px;
+margin-left: 10px;
+}
+.bio {
+  background: white;
+}
+.sides {
+  background: tan;
+}
+footer {
+  width: 100%;
+margin-bottom: 0px;
+}
+.topBorder {
+  background: teal;
+height: 8px;
+}
+.bottomBorder {
+  background: gray;
+  text-align: center;
+height: 50px;
+}

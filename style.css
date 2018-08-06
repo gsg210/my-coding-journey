@@ -1,4 +1,4 @@
-body {background-image: url("pinkdust.png");}
+body {background-image: url("080118/pinkdust.png");}
 
 header {height: 50px;
 
@@ -34,7 +34,7 @@ a:hover {color: white;}
 
     background: rgb(212, 145, 145);
 
-    color: rgb(100, 98, 98);
+    color: #444;
 
       margin: 10px;
 
@@ -58,7 +58,7 @@ a:hover {color: white;}
 
     text-align: center;
 
-    background: rgb(100, 98, 98);
+    background: #444;
 
     line-height: 30px;
 
