@@ -30,15 +30,16 @@ color: #444;}
   grid-area: sds;
   
 }
+h2, h3 {margin: 10px;}
 .nameplate {
   margin: 0 auto;
   width: 400px;
-  background: orange;
+  background: #ea2778;
   height: 75px;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
-  line-height: 60px;
+  line-height: 75px;
 }
 .links {
   margin: 0 auto;
