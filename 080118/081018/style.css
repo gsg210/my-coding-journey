@@ -30,7 +30,7 @@ color: #444;}
   grid-area: sds;
   
 }
-h2, h3 {margin: 10px;}
+h2, h3 {margin: 20px;}
 .nameplate {
   margin: 0 auto;
   width: 400px;
@@ -63,7 +63,7 @@ width: 150px;
 float: left;
 margin: 10px;}
 
-p {margin-left: 10px;}
+p {margin: 20px;}
 
 .content {background: white;}
 .footer {background: teal;
