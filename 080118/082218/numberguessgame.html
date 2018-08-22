@@ -1,0 +1,171 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number Checker</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="text-center">Number Guesser</h1>
+    <h2 class="text-center">See if you can guess the number the computer is thinking of!</h2>
+  </div>
+
+  <div class="container">
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Computer Pick</h3>
+        </div>
+        <div class="card-body text-center">
+          <h1 id="computer-pick">???</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Your Pick</h3>
+        </div>
+        <div class="card-body text-center">
+          <button id="button-1" class="btn btn-danger btn-choice" value="1"><h1>1</h1></button>
+          <button id="button-2" class="btn btn-danger btn-choice" value="2"><h1>2</h1></button>
+          <button id="button-3" class="btn btn-danger btn-choice" value="3"><h1>3</h1></button>
+          <button id="button-4" class="btn btn-danger btn-choice" value="4"><h1>4</h1></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Result</h3>
+        </div>
+        <div class="card-body text-center">
+          <h1 id="result"></h1>
+          <div class="answer"></div>
+          <br>
+          <button id="playAgain" class="btn btn-dark">Play again</button>
+        </div>
+      </div>
+ <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Stats</h3>
+        </div>
+        <div class="card-body text-center">
+          <div class="winStats">Wins: 
+            <div class="wins">
+          </div>
+          <div class="loseStats">Losses:
+            <div class="losses"></div>
+        </div>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+  let wins = 0;
+  let losses = 0;
+  let computerNumber = "";
+  let numbers = [1, 2, 3, 4];
+  let randNumber = numbers[Math.floor(Math.random() * numbers.length)];
+  console.log("numbers", numbers);
+  console.log("random number", randNumber);
+  let button1 = $("#button-1");
+  button1 = 1;
+  let button2 = $("#button-2");
+  button2 = 2;
+  let button3 = $("#button-3");
+  button3 = 3;
+  let button4 = $("#button-4");
+  button4 = 4;
+  document.querySelector(".wins").innerHTML = wins;
+  document.querySelector(".losses").innerHTML = losses;
+  function playAgain() {
+    $(".answer").empty();
+  }
+  $("#playAgain").on("click", function() {
+    console.log("playAgain clicked");
+    document.querySelector("#computer-pick").innerHTML = "???";
+    playAgain();
+  });
+  function reset() {
+    randNumber = numbers[Math.floor(Math.random() * numbers.length)];
+    console.log("new random number", randNumber);
+    document.querySelector(".wins").innerHTML = wins;
+    document.querySelector(".losses").innerHTML = losses;
+  }
+  $("#button-1").on("click", function() {
+    console.log("You clicked 1 button!!");
+    if (button1 == randNumber) {
+      console.log("correct!");
+      document.querySelector("#computer-pick").innerHTML = randNumber;
+      document.querySelector(".answer").innerHTML = "You win!";
+      wins++;
+      reset();
+    } else {
+      console.log("incorrect!");
+      document.querySelector(".answer").innerHTML = "You lose!";
+      losses++;
+      reset();
+    }
+  });
+  $("#button-2").on("click", button2, function() {
+    console.log("You clicked 2 button!!");
+    if (button2 == randNumber) {
+      console.log("correct!");
+      document.querySelector("#computer-pick").innerHTML = randNumber;
+      document.querySelector(".answer").innerHTML = "You win!";
+      //$("#computer-pick").empty();
+      wins++;
+      reset();
+    } else {
+      console.log("wrong!");
+      document.querySelector(".answer").innerHTML = "You lose!";
+      losses++;
+      reset();
+    }
+  });
+  $("#button-3").on("click", button3, function() {
+    console.log("You clicked 3 button!!");
+    if (button3 == randNumber) {
+      console.log("correct!");
+      document.querySelector("#computer-pick").innerHTML = randNumber;
+      document.querySelector(".answer").innerHTML = "You win!";
+      //$("#computer-pick").empty();
+      wins++;
+      reset();
+    } else {
+      console.log("wrong!");
+      document.querySelector(".answer").innerHTML = "You lose!";
+      losses++;
+      reset();
+    }
+  });
+  $("#button-4").on("click", button4, function() {
+    console.log("You clicked 4 button!!");
+    if (button4 === randNumber) {
+      console.log("correct!");
+      document.querySelector("#computer-pick").innerHTML = randNumber;
+      document.querySelector(".answer").innerHTML = "You win!";
+      wins++;
+      reset();
+    } else {
+      console.log("wrong!");
+      document.querySelector(".answer").innerHTML = "You lose!";
+      losses++;
+      reset();
+    }
+  });
+});
+      </script>
+
+</body>
+
+</html>
